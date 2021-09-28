@@ -1,5 +1,6 @@
 body {
   font-family: "Poppins", sans-serif;
+  /* background-color: #cccccc; */
 }
 
 .container-fluid {
@@ -16,4 +17,16 @@ p {
 
 .container {
   padding-left: 20px;
+}
+
+select {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  border: 2px solid #3f51b5;
+  box-shadow: 10px 15px 15px 10px #cccccc;
 }

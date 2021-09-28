@@ -49,15 +49,11 @@
                 <br>
                 <center>
                     <div class="dropdown">
-                        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu2"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Select Option
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                            <button class="dropdown-item" type="button" value="2by2">2 x 2</button>
-                            <button class="dropdown-item" type="button" value="3by3">3 x 3</button>
-                            <button class="dropdown-item disabled" type="button">Coming Soon ... </button>
-                        </div>
+                        <select class="btn dropdown-toggle" type="button" id="name">
+                            <option class="dropdown-item" type="button" value="2by2">2 x 2</option>
+                            <option class="dropdown-item" type="button" value="3by3">3 x 3</option>
+                            <option class="dropdown-item disabled" type="button">Coming Soon ... </option>
+                        </select>
                     </div>
                 </center>
             </div>
@@ -70,9 +66,10 @@
 
     <script>
         $(document).ready(function () {
-            $("#dropdownMenu2").on("change", function () {
-                alert($(this).val());
-            });
+            $("#name").on("change", function () {
+                $(".data").hide();
+                $("#" + $(this).val()).fadeIn(700);
+            }).change();
         });
     </script>
 </body>
