@@ -1,0 +1,19 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container-fluid {
+  padding-top: 100px;
+}
+
+p {
+  align-items: center;
+}
+
+.data {
+  display: none;
+}
+
+.container {
+  padding-left: 20px;
+}
